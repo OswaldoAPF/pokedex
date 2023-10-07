@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Start from './views/Start.vue';
 
 Vue.use( Router )
 
