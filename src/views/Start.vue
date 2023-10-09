@@ -1,5 +1,4 @@
 
-
 <template>
 
   <div class="container__start">
