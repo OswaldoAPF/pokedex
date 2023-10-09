@@ -81,8 +81,7 @@
 
         if (!isAlreadyFavorite && pokemonIndex !== -1) {
           this.favorites.push({ name: pokemonName, inFavorites: true });
-          this.pokemons[pokemonIndex].inFavorites = true; // Establecer inFavorites en true en el array this.pokemons
-
+          this.pokemons[pokemonIndex].inFavorites = true; 
           localStorage.setItem('Favorites', JSON.stringify(this.favorites));
         } else {
           this.favorites.forEach(( p , index ) => {
