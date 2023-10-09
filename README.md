@@ -35,9 +35,6 @@ To interact with the web platform, please access: <a href="https://pokedex-app-o
 → LocalStorage <br>
 → <a href="https://pokeapi.co/">PokeAPI</a> <br>
 
-## Comments 💬
-Changes you made
-
 ## Author 🙋‍♂️
 
  <samp>Hello there.  I'm  <code> **Oswaldo Pereira** </code> <br> I'm a Web Frontend Developer from Argentina.<br>You can reach me with the links below. Get in touch <br> </samp>
