@@ -1,6 +1,7 @@
 
 <template>
   {{ comprobateFavorite }}
+  {{ updateFavorites }}
 
   <div v-if="$route.path === '/favorites'" class="container__list">
     <div v-for="pokemonFavorite in filterPokemons" :key="pokemonFavorite.name">
@@ -24,7 +25,7 @@
   </div>
 
   <div v-else class="container__list">
-    {{ updateFavorites }}
+
     <div v-for="pokemon in filterPokemons" :key="pokemon.name">
       <div class="card__pokemon">
         <RouterLink :to="{ name: 'pokemon-detail', params: { name: pokemon.name } }">
