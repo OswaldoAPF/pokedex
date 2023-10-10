@@ -84,6 +84,7 @@ button, input, a {
   padding: 11px 20px;
   border-radius: 60px;
   text-align: center;
+  cursor: pointer;
 }
 
 .button__start:hover, .button__start:focus {
@@ -365,11 +366,12 @@ button, input, a {
   height: 44px;
 }
 
-.fav__button:hover {
+.fav__active {
   background-image: url(./assets/img/fav__active.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 44px;
+}
+
+.fav__button:focus {
+  background-image: url(./assets/img/fav_disable.png);
 }
 
 .container__message {
