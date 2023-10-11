@@ -22,8 +22,8 @@ To interact with the web platform, please access: <a href="https://pokedex-app-o
 
 ## Preview 💟
   <div style="display: flex; justify-content: center; margin: 30">
-   <img src="https://github.com/OswaldoAPF/images/blob/main/start.png?raw=true" width="430" height="230" alt="">
-    <img src="https://github.com/OswaldoAPF/images/blob/main/card.png?raw=true" width="400" height="230" alt=""> 
+   <img src="https://github.com/OswaldoAPF/images/blob/main/start.png?raw=true" width="400" height="200" alt="">
+    <img src="https://github.com/OswaldoAPF/images/blob/main/card.png?raw=true" width="370" height="200" alt=""> 
     <br>
     <img src="https://github.com/OswaldoAPF/images/blob/main/list-tlf.png?raw=true" width="220" height="400" alt="">
     <img src="https://github.com/OswaldoAPF/images/blob/main/card-tlf.png?raw=true" width="220" height="400" alt="">
