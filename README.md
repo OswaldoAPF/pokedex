@@ -19,6 +19,10 @@
 ## URL 🌼
 To interact with the web platform, please access: <a href="https://pokedex-app-oswaldoapf.netlify.app" target="_blank">⚡Pokédex </a>
 
+## FIGMA 🎈
+In this link you will be able to observe the mockups created in <a href="https://www.figma.com/file/EUxM6y05qNSalkw9P9p5aI/Pok%C3%A9dex?type=design&mode=design&t=IhOIzMqiJ4NbU0wI-1" target="_blank">Figma</a>.
+
+
 
 ## Preview 💟
   <div style="display: flex; justify-content: center; margin: 30">
