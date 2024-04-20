@@ -34,7 +34,7 @@ In this link you will be able to observe the mockups created in <a href="https:/
     <img src="https://github.com/OswaldoAPF/images/blob/main/start-tlf.png?raw=true" width="220" height="400" alt="">
   </div>
 
-## Otros Recursos Utilizados / API ⚙
+## Other Resources Utilized / API ⚙
 → Google Fonts <br>
 → VueRouter <br>
 → LocalStorage <br>
