@@ -131,7 +131,7 @@ button, input, a {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  gap:30px;
+  gap: 30px;
 }
 
 .container__nav {
@@ -211,6 +211,7 @@ button, input, a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 
@@ -225,9 +226,11 @@ button, input, a {
   cursor: pointer;
 }
 
-.card__pokemon a {
-  width: 70%;
-  padding: 10px 0px 10px 20px;
+.go__to__pokemon{
+  height: 100%;
+  width: 100%;
+  align-content: center;
+  padding-left: 20px;
 }
 
 .container__modal {
@@ -235,9 +238,12 @@ button, input, a {
   width: 100%;
   height: 100vh;
   position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
 }
 
 .modal{
@@ -332,46 +338,28 @@ button, input, a {
   background-color: var(--red-dark);
 }
 
-.card__pokemon .fav__button {
+.fav__button {
   background-image: url(./assets/img/fav_disable.png);
   background-repeat: no-repeat;
   background-position: center;
   width: 44px;
   height: 44px;
   padding-right: 15px;
-}
-
-.card__pokemon .fav__active {
-  background-image: url(./assets/img/fav__active.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 44px;
-  height: 44px;
-  padding-right: 15px;
-}
-
-.container__footer__modal .fav__button {
-  background-image: url(./assets/img/fav_disable.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 44px;
-  height: 44px;
-}
-
-.container__footer__modal .fav__active {
-  background-image: url(./assets/img/fav__active.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 44px;
-  height: 44px;
+  cursor: pointer;
 }
 
 .fav__active {
   background-image: url(./assets/img/fav__active.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 44px;
+  height: 44px;
+  padding-right: 15px;
+  cursor: pointer;
 }
 
-.fav__button:focus {
-  background-image: url(./assets/img/fav_disable.png);
+.fav__button:hover {
+  background-image: url(./assets/img/fav__active.png);
 }
 
 .container__message {

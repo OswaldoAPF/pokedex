@@ -2,9 +2,9 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 // Views
 import Start from './views/Start.vue'
-import All from './views/All.vue'
+import Pokemons from './views/Pokemons.vue'
 import Favorites from './views/Favorites.vue'
-import PokemonDetailsComponent from './components/PokemonDetailsComponent.vue'
+import PokemonDetails from './components/PokemonDetails.vue'
 
 const routes = [
   {
@@ -13,13 +13,14 @@ const routes = [
     name: 'start'
   },
   {
-    path: '/all',
-    component: All,
-    name: 'all',
+    path: '/pokemons',
+    component: Pokemons,
+    name: 'pokemons',
+    props: (route) => ({ search: route.query.search || '' }),
     children: [
       {
-        path: '/all/pokemon/:name', 
-        component: PokemonDetailsComponent,
+        path: ':name',
+        component: PokemonDetails,
         name: 'pokemon-detail',
         props: true
       }
@@ -29,6 +30,15 @@ const routes = [
     path: '/favorites', 
     component: Favorites,
     name: 'favorites',
+    props: (route) => ({ search: route.query.search || '' }),
+    children: [
+      {
+        path: ':name',
+        component: PokemonDetails,
+        name: 'favorites-detail',
+        props: true
+      }
+    ]
   },
   
 ];
