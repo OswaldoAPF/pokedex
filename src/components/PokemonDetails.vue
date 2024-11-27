@@ -44,6 +44,21 @@ export default {
     this.loadPokemon();
   },
   methods: {
+    copyDataToClipboard() {
+      const name = document.getElementById('name').textContent;
+      const weight = document.getElementById('weight').textContent;
+      const height = document.getElementById('height').textContent;
+      const types = document.querySelector('.types__details').textContent;
+
+      const dataToCopy = `${name}\n${weight}\n${height}\n${types}`;
+      const textArea = document.createElement('textarea');
+      textArea.value = dataToCopy;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      alert('Datos copiados al portapapeles');
+    },
     closeModal() {
       this.$router.back();
     },
