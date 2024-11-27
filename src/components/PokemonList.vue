@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import { useFavoriteStore } from '../store/store.js'; // Importa el store de Pinia
+import { useFavoriteStore } from '../store/store.js';
 
 export default {
   props: {
@@ -33,7 +33,7 @@ export default {
   },
   data() {
     return {
-      pokemons: [], // Todos los Pokémon
+      pokemons: [],
       favorites: [],
     };
   },
@@ -52,12 +52,12 @@ export default {
         .then(data => {
           this.pokemons = data.results.map(pokemon => ({
             ...pokemon,
-            inFavorites: store.isFavorite(pokemon.name), // Vincula el estado de favoritos desde el store
+            inFavorites: store.isFavorite(pokemon.name),
           }));
 
           this.favorites = store.favorites.map(favorite => ({
             ...favorite,
-            inFavorites: true, // Asegura que los favoritos siempre tengan `inFavorites: true`
+            inFavorites: true,
           }));
         })
         .catch(error => {
@@ -70,20 +70,16 @@ export default {
 
       const isFavoriteNow = store.isFavorite(pokemon.name);
 
-      // Actualiza inFavorites en la lista general
       const pokemonsIndex = this.pokemons.findIndex(p => p.name === pokemon.name);
       if (pokemonsIndex !== -1) {
         this.pokemons[pokemonsIndex].inFavorites = isFavoriteNow;
       }
 
-      // Actualiza inFavorites en la lista de favoritos
       if (isFavoriteNow) {
-        // Solo agrega a favoritos si no está ya presente
         if (!this.favorites.some(f => f.name === pokemon.name)) {
           this.favorites.push({ ...pokemon, inFavorites: true });
         }
       } else {
-        // Elimina de la lista de favoritos
         this.favorites = this.favorites.filter(f => f.name !== pokemon.name);
       }
     },

@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import { useFavoriteStore } from '../store/store.js'; // Importa el store
+import { useFavoriteStore } from '../store/store.js';
 
 export default {
   data() {
