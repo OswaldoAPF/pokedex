@@ -19,17 +19,22 @@
 ## URL 🌼
 To interact with the web platform, please access: <a href="https://pokedex-app-oswaldoapf.netlify.app" target="_blank">⚡Pokédex </a>
 
+## FIGMA 🎈
+In this link you will be able to observe the mockups created in <a href="https://www.figma.com/file/EUxM6y05qNSalkw9P9p5aI/Pok%C3%A9dex?type=design&mode=design&t=IhOIzMqiJ4NbU0wI-1" target="_blank">Figma</a>.
+
+
 
 ## Preview 💟
   <div style="display: flex; justify-content: center; margin: 30">
-   <img src="https://github.com/OswaldoAPF/images/blob/main/start.png?raw=true" width="400" height="230" alt="" >
-    <img src="https://github.com/OswaldoAPF/images/blob/main/card.png?raw=true" width="400" height="230" alt=""> <br>
+   <img src="https://github.com/OswaldoAPF/images/blob/main/start.png?raw=true" width="400" height="200" alt="">
+    <img src="https://github.com/OswaldoAPF/images/blob/main/card.png?raw=true" width="370" height="200" alt=""> 
+    <br>
     <img src="https://github.com/OswaldoAPF/images/blob/main/list-tlf.png?raw=true" width="220" height="400" alt="">
     <img src="https://github.com/OswaldoAPF/images/blob/main/card-tlf.png?raw=true" width="220" height="400" alt="">
     <img src="https://github.com/OswaldoAPF/images/blob/main/start-tlf.png?raw=true" width="220" height="400" alt="">
   </div>
 
-## Otros Recursos Utilizados / API ⚙
+## Other Resources Utilized / API ⚙
 → Google Fonts <br>
 → VueRouter <br>
 → LocalStorage <br>
